@@ -1,0 +1,11 @@
+package com.dhatvibs.modules.entity;
+
+public enum WeekDay {  
+    MONDAY,
+    TUESDAY,
+    WEDNESDAY,
+    THURSDAY,
+    FRIDAY,
+    SATURDAY,
+    SUNDAY
+}
