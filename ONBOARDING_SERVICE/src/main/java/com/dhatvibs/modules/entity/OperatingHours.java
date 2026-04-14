@@ -20,7 +20,7 @@ public class OperatingHours {
    private RestaurantInfo restaurantInfo;
  
    @Enumerated(EnumType.STRING)
-   @Column(name = "day_of_week", nullable = false)
+   @Column(name = "week_day", nullable = false)
    private WeekDay Weekday;
  
    /** false = Closed for that day (as shown in the UI toggle) */

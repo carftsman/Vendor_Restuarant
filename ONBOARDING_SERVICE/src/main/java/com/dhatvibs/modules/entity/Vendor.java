@@ -71,4 +71,11 @@ public class Vendor {
  
    @OneToOne(mappedBy = "vendor", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
    private BankDetails bankDetails;
+   
+   @PrePersist
+   public void setDefaultStatus() {
+       if (this.status == null) {
+           this.status = VendorStatus.PENDING_VERIFICATION;
+       }
+   }
 }  
